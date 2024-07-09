@@ -1,0 +1,97 @@
+/* --------------------------------------  BANNER AREA ----------------------------------------------------------------------*/
+
+@media (max-width: 991px) {
+    .banner__content p {
+      padding-right: 50px;
+      font-size: 14px;
+    }
+  
+    .banner__title {
+      font-size: 40px;
+    }
+  
+    .banner__search-input input {
+      width: 300px;
+      font-size: 14px;
+    }
+  
+    .banner__thumb img {
+      width: 600px;
+      height: auto;
+    }
+  
+    .banner__search-inner button {
+      padding: 10px 15px;
+      height: 45px;
+      font-size: 14px;
+    }
+  
+    .banner-area {
+      height: 700px;
+    }
+  }
+  
+
+
+
+
+  @media (max-width: 767px) {
+    .banner__content p {
+      padding-right: 0;
+      font-size: 12px;
+    }
+  
+    .banner__title {
+      font-size: 30px;
+    }
+  
+    .banner__search-input input {
+      width: 200px;
+      font-size: 12px;
+    }
+  
+    .banner__thumb img {
+      width: 100%;
+      height: auto;
+      margin-top: 0;
+    }
+  
+    .banner__search-inner button {
+      padding: 10px 10px;
+      height: 40px;
+      font-size: 12px;
+    }
+  
+    .banner-area {
+      height: 600px;
+    }
+  }
+  
+
+
+  
+ 
+  @media (max-width: 575px) {
+    .banner__title {
+      font-size: 24px;
+    }
+  
+    .banner__search-input input {
+      width: 150px;
+      font-size: 10px;
+    }
+  
+    .banner__search-inner button {
+      padding: 8px 8px;
+      height: 35px;
+      font-size: 10px;
+    }
+  
+    .banner-area {
+      height: 500px;
+    }
+  }
+
+  /* ---------------------------------------------   ----------------------------------------------------------------------- */
+
+  
