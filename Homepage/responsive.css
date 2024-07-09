@@ -1,13 +1,38 @@
+@media (max-width: 992px) {
+  .bars {
+      width: 30px;
+      color: #3b180c;
+  }
+
+  .navbar-toggler {
+      border: none;
+      outline: none;
+  }
+
+  .navbar-nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 15px;
+      font-family: "Be Vietnam Pro", sans-serif;
+      font-weight: 600;
+  }
+}
+
+
 /* --------------------------------------  BANNER AREA ----------------------------------------------------------------------*/
+
 
 @media (max-width: 991px) {
     .banner__content p {
       padding-right: 50px;
       font-size: 14px;
+      text-align: center;
     }
   
     .banner__title {
       font-size: 40px;
+      text-align: center;
     }
   
     .banner__search-input input {
@@ -16,8 +41,7 @@
     }
   
     .banner__thumb img {
-      width: 600px;
-      height: auto;
+      display: none;
     }
   
     .banner__search-inner button {
@@ -29,6 +53,10 @@
     .banner-area {
       height: 700px;
     }
+    
+    .banner__search-inner{
+      justify-content: center;
+    }
   }
   
 
@@ -39,10 +67,12 @@
     .banner__content p {
       padding-right: 0;
       font-size: 12px;
+      text-align: center;
     }
   
     .banner__title {
       font-size: 30px;
+      text-align: center;
     }
   
     .banner__search-input input {
@@ -74,21 +104,57 @@
   @media (max-width: 575px) {
     .banner__title {
       font-size: 24px;
+      text-align: center;
+      
     }
   
     .banner__search-input input {
-      width: 150px;
+      width: 200px;
       font-size: 10px;
     }
   
     .banner__search-inner button {
       padding: 8px 8px;
-      height: 35px;
+      height: 50px;
       font-size: 10px;
     }
   
     .banner-area {
       height: 500px;
+    }
+    .banner__content p{
+      text-align: center;
+    }
+    .banner__search-inner{
+      justify-content: center;
+    }
+    .banner-anim{
+      bottom: 60px;
+    }
+    .category__more{
+      margin-top: -40px;
+    }
+
+    @keyframes move-arrow {
+      0% {
+          transform: translateX(-180px);
+      }
+      
+      100% {
+          transform: translateX(100px);
+      }
+    }
+    
+    @keyframes move-left-right {
+      0%, 100% {
+          transform: translateX(-100px);
+      }
+      50% {
+          transform: translateX(10px);
+      }
+    }
+    .hero-square-2{
+      display: none;
     }
   }
 
