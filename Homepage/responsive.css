@@ -99,9 +99,13 @@
   
 
 
-  
  
   @media (max-width: 575px) {
+    .navbar-brand img{
+      width: 90%;
+      height: 90%;
+    }
+
     .banner__title {
       font-size: 24px;
       text-align: center;
@@ -158,6 +162,51 @@
     }
   }
 
-  /* ---------------------------------------------   ----------------------------------------------------------------------- */
+  /* --------------------------------------------- Product Slide Show   ----------------------------------------------------------------------- */
 
-  
+  @media (max-width: 1200px) {
+    .content {
+        flex: 0 0 25%;
+    }
+}
+
+@media (max-width: 992px) {
+    .content {
+        flex: 0 0 33.33%;
+    }
+}
+
+@media (max-width: 768px) {
+    .content {
+        flex: 0 0 50%;
+    }
+}
+
+@media (max-width: 576px) {
+    .content {
+        flex: 0 0 80%;
+        margin: 10px 0;
+    }
+    .content img {
+        width: 180px;
+        height: 180px;
+    }
+    .product_slider h3 {
+        font-size: 25px;
+        padding-top: 6px;
+    }
+    .content p {
+        font-size: 15px;
+    }
+    .content h6 {
+        font-size: 23px;
+    }
+    .content .fa {
+        font-size: 20px;
+    }
+    .continue {
+        font-size: 20px;
+        padding: 12px;
+    }
+}
+/* ----------------------------------------------------    Profile Area      ---------------------------------------------------------------------*/

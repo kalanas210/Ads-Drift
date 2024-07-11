@@ -445,3 +445,312 @@ button:active{
 .link-btn:active {
   transform: translateY(2px);
 }
+
+/* ---------------------------------------------------------  Products ------------------------------------------------------------ */
+
+.product_slider {
+  font-family: "Be Vietnam Pro", sans-serif;
+  background-color: #eeedf2;
+  position: relative;
+}
+
+.section__title-wrapper {
+  margin-bottom: 20px;
+}
+
+.product_main {
+  display: flex;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  margin: 0 10%;
+}
+
+.content {
+  flex: 0 0 25%; /* 25% ensures 4 cards fit in the container */
+  box-sizing: border-box;
+  text-align: center;
+  border-radius: 20px;
+  cursor: pointer;
+  padding-top: 10px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  transition: 0.4s;
+  background: #f2f2f2;
+  margin: 0 10px;
+}
+.content:hover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  transform: translateY(-8px);
+}
+.content img {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  display: block;
+}
+.content p {
+  color: #3b180c;
+}
+.content h6 {
+  font-size: 26px;
+  color: #222f3e;
+}
+.content h5 {
+  font-size: small;
+}
+.content ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+.content li {
+  padding: 5px;
+}
+.content .fa {
+  font-size: 26px;
+  transition: 0.4s;
+}
+.content .fa-solid {
+  color: #500774;
+}
+.content .fa:hover {
+  transform: scale(1.3);
+  transition: 0.6s;
+}
+.continue {
+  font-size: 24px;
+  color: white;
+  width: 100%;
+  padding: 15px;
+  border: none;
+  cursor: pointer;
+  margin-top: 5px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-color: #500774;
+}
+.pre-btn, .nxt-btn {
+  border: none;
+  width: 10%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 9;
+  background: none;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.pre-btn {
+  left: 0;
+  opacity: 0.5;
+}
+.nxt-btn {
+  right: 0;
+  opacity: 0.5;
+}
+.pre-btn:hover, .nxt-btn:hover {
+  opacity: 1;
+}
+.card-btn {
+  position: absolute;
+  bottom: 270px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 5px;
+  width: 35%;
+  text-transform: capitalize;
+  border: none;
+  background: #fff;
+  border-radius: 5px;
+  transition: 0.5s;
+  cursor: pointer;
+  opacity: 0;
+}
+.content:hover .card-btn {
+  opacity: 1;
+}
+
+/* -------------------------------------------- Profile Area --------------------------------------------------------*/
+.profile_slider_main {
+  padding-top: 40px;
+  padding-bottom: 60px;
+  font-family: "Be Vietnam Pro", sans-serif;
+  background-color: #e2e2ec;
+}
+.profile_slider {
+  margin: 0;
+  padding-bottom: 50px;
+  box-sizing: border-box;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  color: #200d06;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.left-arrow {
+  left: 10px;
+}
+
+.right-arrow {
+  right: 10px;
+
+}
+
+.slide-container {
+  width: 100%;
+  background-color: #e2e2ec;
+  padding: 40px 0;
+  overflow: hidden;
+}
+
+.slide-content {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.card-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  transition: transform 0.5s ease-in-out;
+  margin-left: 20px;
+  
+}
+
+.card-main {
+  width: 350px;
+  border-radius: 35px;
+  background-color: #FFF;
+  flex-shrink: 0;
+  height: 500px;
+}
+
+.image-content, .card-main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 14px;
+}
+
+.image-content {
+  row-gap: 5px;
+  position: relative;
+  padding: 25px 0;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #df3afc;
+  border-radius: 25px 25px 0 25px;
+}
+
+.overlay::before, .overlay::after {
+  position: absolute;
+  content: '';
+  height: 40px;
+  width: 40px;
+  background-color: #df3afc;
+  right: 0;
+  bottom: -40px;
+}
+
+.overlay::after {
+  border-radius: 0 25px 0 0;
+  background-color: #FFF;
+}
+
+.card-image {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background: #FFF;
+  padding: 3px;
+}
+
+.card-image .card-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid rgb(94, 0, 128);
+}
+
+.name {
+  font-size: 20px;
+  font-weight: 500;
+  color: #200d06;
+}
+
+.description {
+  font-size: 14px;
+  color: #707070;
+  text-align: center;
+}
+
+.card-main button {
+  border: none;
+  font-size: 16px;
+  color: #ffffff;
+  padding: 8px 16px;
+  background-color: #200d06;
+  border-radius: 6px;
+  margin: 14px;
+  transition: all 0.3s ease;
+}
+
+.card-main button:hover {
+  background: #3b180c;
+}
+
+.profile_head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  align-self: stretch;
+}
+
+.profile_head_top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.profile_head_top_para {
+  font-size: 2.25rem;
+  font-weight: 800;
+  letter-spacing: -0.045rem;
+  line-height: 2.75rem;
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+
+.profile_head_bottom {
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+  color: #181d25;
+  font-weight: 600;
+  margin-top: -8px;
+}
