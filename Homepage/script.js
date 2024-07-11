@@ -10,40 +10,40 @@ sections.forEach((section) => {
     let sectionRectTop = section.getBoundingClientRect().top;
 
     if(sectionRectTop<windowHeight){
-        section.classList.add("active");
+        section.classList.add("active2");
     }
    }
 
    /* ------------------------------------------------------- Revealing Elements one by one on Scrolling   ----------------------------------------- */
    window.addEventListener("scroll" , () => {
-        let reveals = section.querySelectorAll(".reveal");
+        let reveals = section.querySelectorAll(".reveal2");
 
-        reveals.forEach((reveal,index) => {
-            if(section.classList.contains("active")){
-                const delay = 500;
+        reveals.forEach((reveal2,index) => {
+            if(section.classList.contains("active2")){
+                const delay = 600;
 
                 setTimeout(() => {
-                    reveal.classList.add("active");
+                    reveal2.classList.add("active2");
                 } , index * delay);
             }
         });
    }); 
 
-   /* ------------------------------------------------------- Revealing Elements one by one on scroll revealing point   ----------------------------------------- */
+   /* ------------------------------------------------------- Revealing Elements one by one on scroll revealing point   ( FREEZED) ----------------------------------------- */
 
   /* window.addEventListener("scroll" , () =>{
-    let reveals = section.querySelectorAll(".reveal");
+    let reveals = section.querySelectorAll(".reveal2");
 
-    reveals.forEach((reveal,index) => {
+    reveals.forEach((reveal2,index) => {
         let windowHeight = window.innerHeight;
-        let revealRectTop = reveal.getBoundingClientRect().top;
+        let revealRectTop = reveal2.getBoundingClientRect().top;
         let revealpoint = -250;
 
         if(revealRectTop < windowHeight - revealpoint){
             const delay =  600;
 
             setTimeout(() => {
-                reveal.classList.add("active");
+                reveal2.classList.add("active2");
             } , index * delay);
         }
     });
@@ -52,17 +52,17 @@ sections.forEach((section) => {
 /* ----------------------------------------------------------------------------------------------------- */
 
    window.addEventListener("load" , () => {
-    let reveals = section.querySelectorAll(".reveal");
+    let reveals = section.querySelectorAll(".reveal2");
 
-    reveals.forEach((reveal,index) => {
+    reveals.forEach((reveal2,index) => {
         let windowHeight = window.innerHeight;
         let revealRectTop = reveal.getBoundingClientRect().top;
 
         if(revealRectTop < windowHeight){
-            const delay =  500;
+            const delay =  600;
 
             setTimeout(() => {
-                reveal.classList.add("active");
+                reveal2.classList.add("active2");
             } , index * delay);
         }
     });
@@ -72,7 +72,7 @@ sections.forEach((section) => {
 
 
 
-/* -----------------------------------------------------------------------------------------------------------------------*/
+/* -------------------------------------------  Slide Show ----------------------------------------------------------------------------*/
 
 const productContainers = [...document.querySelectorAll('.product_main')];
 const nxtBtn = [...document.querySelectorAll('.nxt-btn')];
@@ -91,7 +91,7 @@ productContainers.forEach((item, i) => {
 });
 
 
-/* -------------------- -----------------------------------------------------------------------------*/
+/* -------------------- --------------------  Profile Show  ---------------------------------------------------------*/
 document.addEventListener('DOMContentLoaded', () => {
   const prevBtn = document.querySelector('.left-arrow');
   const nextBtn = document.querySelector('.right-arrow');
@@ -130,3 +130,32 @@ document.addEventListener('DOMContentLoaded', () => {
   // Initial call to set up the slider
   updateSlider();
 });
+
+
+/* ---------------------------------------------------   Scroll Reveal --------------------------------------------*/
+window.addEventListener('scroll' , reveal);
+function reveal(){
+    var reveal = document.querySelectorAll('.reveal');
+    for(var i=0;i<reveal.length;i++){
+        var windowheight = window.innerHeight;
+        var revealtop = reveal[i].getBoundingClientRect().top;
+        var revealpoint = 150;
+
+        if(revealtop < windowheight - revealpoint){
+            reveal[i].classList.add('active');
+
+        } else {
+            reveal[i].classList.remove('active');
+        }
+    }
+}
+
+ScrollReveal({
+  reset : true,
+  distance : '60px',
+  duration : 2500,
+  
+});
+
+ScrollReveal().reveal('.hotel-img' , {origin : 'right'});
+
