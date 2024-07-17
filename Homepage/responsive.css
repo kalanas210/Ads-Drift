@@ -17,6 +17,8 @@
       font-family: "Be Vietnam Pro", sans-serif;
       font-weight: 600;
   }
+  
+ 
 }
 
 
@@ -210,3 +212,83 @@
     }
 }
 /* ----------------------------------------------------    Profile Area      ---------------------------------------------------------------------*/
+@media (max-width: 992px) {
+   .profile_head_top_para , .profile_head_bottom{
+    text-align: center;
+   }
+}
+
+@media (max-width: 576px){
+  .profile_head_top_para {
+    text-align: center;
+
+   }
+   .profile_head_bottom{
+    font-size: 1rem;
+   }
+
+   .arrow {
+    font-size: 1.4rem;
+    color: #200d06;
+   }
+   .left-arrow {
+    left: 0px;
+  }
+  
+  .right-arrow {
+    right: -2px;
+  
+  }
+
+  .card-main {
+    padding-left: 0px;
+    margin-left: 0px;
+    width: 300px;
+    height: 490px;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 200px;
+    width: 300px;
+    background-color: #df3afc;
+    border-radius: 25px 25px 0 25px;
+  }
+  .card-image .card-img {
+    height: 125px;
+    width: 125px;
+    
+  }
+  .card-image {
+    position: relative;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    background: #df3afc;
+    
+  }
+  .card-main-content{
+    margin-top: 30px;
+  }
+  .description{
+    margin-top: -5px;
+  }
+  .card-wrapper{
+    margin-left: -5px;
+  }
+
+
+
+
+  .product_main {
+ padding-left: 10px;
+}
+
+.content {
+  
+  margin: 0 23px;
+  
+}
+}

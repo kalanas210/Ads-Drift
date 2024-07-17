@@ -476,6 +476,7 @@ button:active{
   transition: 0.4s;
   background: #f2f2f2;
   margin: 0 10px;
+  
 }
 .content:hover {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
@@ -610,7 +611,6 @@ button:active{
   right: 90px;
 
 }
-
 .slide-container {
   width: 77%;
   background-color: #e2e2ec;
